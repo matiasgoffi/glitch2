@@ -14,7 +14,7 @@ Swal.fire({
      toast: true
 }).then(result =>{
     user= result.value;
-    socket.emit('authenticated', user)
+    socket.emit('authenticated')
 })
 
 chatbox.addEventListener('keyup', evt=>{
